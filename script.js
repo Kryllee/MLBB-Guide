@@ -353,10 +353,10 @@ if (themeToggle) {
 // ===== PAGE-SPECIFIC FUNCTIONALITY =====
 
 // Get current page
-const currentPage = window.location.pathname.split('/').pop() || 'guide.html';
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
 // ===== GUIDE PAGE =====
-if (currentPage === 'guide.html' || currentPage === '') {
+if (currentPage === 'index.html' || currentPage === '') {
     // Initialize search functionality when DOM is fully loaded
     document.addEventListener('DOMContentLoaded', function() {
         // Get search elements
