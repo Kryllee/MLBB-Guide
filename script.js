@@ -743,7 +743,6 @@ function setUrlParameter(name, value) {
 function findHeroById(id) {
     return heroes.find(hero => hero.id === id);
 }
-
 // Function to find a hero by name
 function findHeroByName(name) {
     return heroes.find(hero => hero.name.toLowerCase() === name.toLowerCase());

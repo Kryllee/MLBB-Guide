@@ -179,7 +179,6 @@ p {
     color: var(--foreground);
     transition: background-color 0.3s, color 0.3s;
 }
-
 .theme-toggle:hover,
 .mobile-menu-toggle:hover {
     background-color: var(--secondary);

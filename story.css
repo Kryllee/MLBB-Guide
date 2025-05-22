@@ -357,7 +357,7 @@ p {
     object-fit: cover;
     transition: transform 0.3s ease;
     border: 2px solid transparent;
-}
+} 
 
 .hero-tab:hover img {
     transform: scale(1.1);
