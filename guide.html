@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Hero Guide</title>
+    <link rel="stylesheet" href="guide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="guide.html" class="logo">MLBB Guide</a>
+                <nav class="nav-desktop">
+                    <ul>
+                        <li><a href="guide.html" class="active">Guide</a></li>
+                        <li><a href="story.html">Story</a></li>
+                        <li><a href="items.html">Items</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav id="nav-mobile" class="nav-mobile">
+            <ul>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="story.html">Story</a></li>
+                <li><a href="items.html">Items</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Mobile Legends Hero Guide</h1>
+                <p>Master your favorite heroes with our comprehensive guides</p>
+                <div class="hero-buttons">
+                    <a href="#heroes-section" class="btn btn-primary">Browse Heroes</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Heroes Section -->
+            <section id="heroes-section" class="heroes-section">
+                <h2>Hero Guides</h2>
+                
+                <!-- Hero Card: Martis -->
+                <div class="hero-card" id="martis">
+                    <div class="hero-image">
+                        <img src="images/heroes/martis.jpg" alt="Martis">
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-header">
+                            <h3>Martis</h3>
+                            <div class="hero-meta">
+                                <span class="hero-role">Fighter</span>
+                                <span class="hero-specialty">Burst/Reap</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-group">
+                                <h4>Difficulty</h4>
+                                <div class="stat-bars">
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar"></div>
+                                    <div class="stat-bar"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-row">
+                                <div class="stat-group">
+                                    <h4>Damage</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="stat-group">
+                                    <h4>Durability</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability"></div>
+                                        <div class="stat-bar durability"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-skills">
+                            <h4>Skills</h4>
+                            <div class="skills-list">
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/martis-passive.jpg" alt="Ashura's Wrath">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Ashura's Wrath (Passive)</h5>
+                                        <p>After using a skill, Martis's next basic attack will be enhanced, dealing additional physical damage and reducing the target's movement speed.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/martis-skill1.jpg" alt="Mortal Coil">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Mortal Coil (Skill 1)</h5>
+                                        <p>Martis spins his blades rapidly, dealing physical damage to surrounding enemies. This skill can be cast up to 3 times in succession, with the third cast knocking enemies airborne.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 9.0s</span>
+                                            <span>Mana Cost: 70</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/martis-skill2.jpg" alt="Decimation">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Decimation (Skill 2)</h5>
+                                        <p>Martis charges forward, becoming immune to crowd control effects. If he hits an enemy, he will drag them along and slam them backward, dealing physical damage and stunning them.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 12.0s</span>
+                                            <span>Mana Cost: 85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/martis-ultimate.jpg" alt="Decimate">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Decimate (Ultimate)</h5>
+                                        <p>Martis unleashes a powerful slash that deals physical damage to enemies in front of him. If this skill kills an enemy hero, its cooldown is reset. The damage increases significantly when the target's HP is below 50%.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 40.0s</span>
+                                            <span>Mana Cost: 120</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-tips">
+                            <h4>Pro Tips</h4>
+                            <ul>
+                                <li>Use Skill 2 to engage, followed by Skill 1 (all three casts) to deal maximum damage.</li>
+                                <li>Save your ultimate for executing low-health enemies to reset its cooldown.</li>
+                                <li>Take advantage of the immunity frames in Skill 2 to dodge enemy crowd control.</li>
+                                <li>In team fights, look for opportunities to get multiple kills with your ultimate to maximize its reset potential.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="hero-links">
+                            <a href="story.html" class="btn btn-outline">Read Story</a>
+                            <a href="skin.html" class="btn btn-outline">View Skins</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Card: Luo Yi -->
+                <div class="hero-card" id="luo-yi">
+                    <div class="hero-image">
+                        <img src="images/heroes/luoyi.jpg" alt="Luo Yi">
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-header">
+                            <h3>Luo Yi</h3>
+                            <div class="hero-meta">
+                                <span class="hero-role">Mage</span>
+                                <span class="hero-specialty">Burst/Control</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-group">
+                                <h4>Difficulty</h4>
+                                <div class="stat-bars">
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar"></div>
+                                    <div class="stat-bar"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-row">
+                                <div class="stat-group">
+                                    <h4>Damage</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="stat-group">
+                                    <h4>Durability</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability"></div>
+                                        <div class="stat-bar durability"></div>
+                                        <div class="stat-bar durability"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-skills">
+                            <h4>Skills</h4>
+                            <div class="skills-list">
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/luoyi-passive.jpg" alt="Duality">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Duality (Passive)</h5>
+                                        <p>Luo Yi's skills mark enemies with either Yin or Yang. When an enemy is marked with both, they take additional magic damage and are slowed.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/luoyi-skill1.jpg" alt="Dispersion">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Dispersion (Skill 1)</h5>
+                                        <p>Luo Yi releases a Yin-Yang sphere that deals magic damage to enemies hit and marks them with Yin. If the enemy already has a Yin mark, they will be stunned.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 8.0s</span>
+                                            <span>Mana Cost: 70</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/luoyi-skill2.jpg" alt="Rotation">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Rotation (Skill 2)</h5>
+                                        <p>Luo Yi creates a field that deals magic damage to enemies inside and marks them with Yang. If the enemy already has a Yang mark, they will be stunned.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 10.0s</span>
+                                            <span>Mana Cost: 80</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/luoyi-ultimate.jpg" alt="Diversion">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Diversion (Ultimate)</h5>
+                                        <p>Luo Yi channels for a short duration, then teleports herself and nearby allies to a selected location on the map.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 60.0s</span>
+                                            <span>Mana Cost: 120</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-tips">
+                            <h4>Pro Tips</h4>
+                            <ul>
+                                <li>Use Skill 1 followed by Skill 2 (or vice versa) to trigger your passive's additional damage and slow effect.</li>
+                                <li>If an enemy already has a Yin mark, use Skill 1 again to stun them. Similarly, use Skill 2 again on enemies with a Yang mark.</li>
+                                <li>Use your ultimate to quickly move your team to objectives like Lord or Turtle, or to surprise the enemy team with an unexpected gank.</li>
+                                <li>Communicate with your team before teleporting to ensure everyone is ready.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="hero-links">
+                            <a href="story.html" class="btn btn-outline">Read Story</a>
+                            <a href="skin.html" class="btn btn-outline">View Skins</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Card: Ixia -->
+                <div class="hero-card" id="ixia">
+                    <div class="hero-image">
+                        <img src="images/heroes/ixia.jpg" alt="Ixia">
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-header">
+                            <h3>Ixia</h3>
+                            <div class="hero-meta">
+                                <span class="hero-role">Marksman</span>
+                                <span class="hero-specialty">Damage/Burst</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-group">
+                                <h4>Difficulty</h4>
+                                <div class="stat-bars">
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar"></div>
+                                    <div class="stat-bar"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-row">
+                                <div class="stat-group">
+                                    <h4>Damage</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="stat-group">
+                                    <h4>Durability</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability"></div>
+                                        <div class="stat-bar durability"></div>
+                                        <div class="stat-bar durability"></div>
+                                        <div class="stat-bar durability"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-skills">
+                            <h4>Skills</h4>
+                            <div class="skills-list">
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/ixia-passive.jpg" alt="Floral Power">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Floral Power (Passive)</h5>
+                                        <p>Ixia can switch between two flower modes: Lily (enhanced basic attacks) and Rose (enhanced skills). Each mode provides different bonuses to her abilities.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/ixia-skill1.jpg" alt="Petal Barrage">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Petal Barrage (Skill 1)</h5>
+                                        <p>Ixia fires a barrage of flower petals in a specified direction, dealing physical damage to enemies hit. In Lily mode, this skill has increased range. In Rose mode, it deals additional magic damage.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 7.0s</span>
+                                            <span>Mana Cost: 65</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/ixia-skill2.jpg" alt="Floral Shift">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Floral Shift (Skill 2)</h5>
+                                        <p>Ixia dashes in a specified direction and switches her flower mode. In Lily mode, she gains a shield after dashing. In Rose mode, she leaves a trail that slows enemies.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 10.0s</span>
+                                            <span>Mana Cost: 75</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/ixia-ultimate.jpg" alt="Blossom Storm">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Blossom Storm (Ultimate)</h5>
+                                        <p>Ixia unleashes a powerful storm of flowers around her, dealing physical damage to nearby enemies. The effect varies based on her current flower mode: Lily mode increases attack speed, while Rose mode increases skill damage.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 45.0s</span>
+                                            <span>Mana Cost: 120</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-tips">
+                            <h4>Pro Tips</h4>
+                            <ul>
+                                <li>Master the art of switching between Lily and Rose modes based on the situation.</li>
+                                <li>Use Lily mode for sustained damage in extended fights, and Rose mode for burst damage and utility in quick skirmishes.</li>
+                                <li>In Rose mode, use Skill 2 to dash in and leave a slowing trail, then use Skill 1 for additional magic damage.</li>
+                                <li>In Lily mode, use your ultimate first for the attack speed boost, then focus on basic attacks enhanced by your passive.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="hero-links">
+                            <a href="story.html" class="btn btn-outline">Read Story</a>
+                            <a href="skin.html" class="btn btn-outline">View Skins</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Card: Gatotkaca -->
+                <div class="hero-card" id="gatotkaca">
+                    <div class="hero-image">
+                        <img src="images/heroes/gatotkaca.jpg" alt="Gatotkaca">
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-header">
+                            <h3>Gatotkaca</h3>
+                            <div class="hero-meta">
+                                <span class="hero-role">Tank</span>
+                                <span class="hero-specialty">Crowd Control/Damage</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-group">
+                                <h4>Difficulty</h4>
+                                <div class="stat-bars">
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar"></div>
+                                    <div class="stat-bar"></div>
+                                    <div class="stat-bar"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-row">
+                                <div class="stat-group">
+                                    <h4>Damage</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage"></div>
+                                        <div class="stat-bar damage"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="stat-group">
+                                    <h4>Durability</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-skills">
+                            <h4>Skills</h4>
+                            <div class="skills-list">
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/gatotkaca-passive.jpg" alt="Steel Bones">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Steel Bones (Passive)</h5>
+                                        <p>Gatotkaca's physical defense increases when he takes damage. Additionally, when his HP falls below 30%, he gains increased physical and magical defense.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/gatotkaca-skill1.jpg" alt="Blast Iron Fist">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Blast Iron Fist (Skill 1)</h5>
+                                        <p>Gatotkaca charges his fist and releases a powerful punch that deals physical damage to enemies in a line and slows them.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 8.0s</span>
+                                            <span>Mana Cost: 60</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/gatotkaca-skill2.jpg" alt="Unbreakable">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Unbreakable (Skill 2)</h5>
+                                        <p>Gatotkaca taunts nearby enemies, forcing them to attack him for a short duration. He also gains a shield that absorbs damage.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 12.0s</span>
+                                            <span>Mana Cost: 80</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/gatotkaca-ultimate.jpg" alt="Avatar of Guardian">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Avatar of Guardian (Ultimate)</h5>
+                                        <p>Gatotkaca leaps into the air and crashes down at a specified location, dealing physical damage to enemies in the area and knocking them airborne.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 40.0s</span>
+                                            <span>Mana Cost: 120</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-tips">
+                            <h4>Pro Tips</h4>
+                            <ul>
+                                <li>Initiate team fights with your ultimate to disrupt enemy positioning and create chaos.</li>
+                                <li>Follow up with Skill 2 to taunt key targets and Skill 1 to deal damage and slow enemies trying to escape.</li>
+                                <li>Don't be afraid to take damage in fights, as your passive increases your defense.</li>
+                                <li>When your HP drops below 30%, you become significantly tankier, which can bait enemies into overcommitting to kill you.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="hero-links">
+                            <a href="story.html" class="btn btn-outline">Read Story</a>
+                            <a href="skin.html" class="btn btn-outline">View Skins</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Card: Belerick -->
+                <div class="hero-card" id="belerick">
+                    <div class="hero-image">
+                        <img src="images/heroes/belerick.jpg" alt="Belerick">
+                    </div>
+                    <div class="hero-info">
+                        <div class="hero-header">
+                            <h3>Belerick</h3>
+                            <div class="hero-meta">
+                                <span class="hero-role">Tank</span>
+                                <span class="hero-specialty">Crowd Control/Regen</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-group">
+                                <h4>Difficulty</h4>
+                                <div class="stat-bars">
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar active"></div>
+                                    <div class="stat-bar"></div>
+                                    <div class="stat-bar"></div>
+                                    <div class="stat-bar"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="stat-row">
+                                <div class="stat-group">
+                                    <h4>Damage</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage active"></div>
+                                        <div class="stat-bar damage"></div>
+                                        <div class="stat-bar damage"></div>
+                                        <div class="stat-bar damage"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="stat-group">
+                                    <h4>Durability</h4>
+                                    <div class="stat-bars">
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                        <div class="stat-bar durability active"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-skills">
+                            <h4>Skills</h4>
+                            <div class="skills-list">
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/belerick-passive.jpg" alt="Nature's Guard">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Nature's Guard (Passive)</h5>
+                                        <p>When nearby allies take damage, Belerick absorbs a portion of it and counters with magical thorns that damage nearby enemies. Additionally, his basic attacks heal him based on his maximum HP.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/belerick-skill1.jpg" alt="Vine Grab">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Vine Grab (Skill 1)</h5>
+                                        <p>Belerick extends his vines to grab an enemy, dealing magic damage and pulling them toward him.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 9.0s</span>
+                                            <span>Mana Cost: 60</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/belerick-skill2.jpg" alt="Nature's Seed">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Nature's Seed (Skill 2)</h5>
+                                        <p>Belerick plants a seed at a specified location that explodes after a short delay, dealing magic damage to enemies in the area and slowing them.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 10.0s</span>
+                                            <span>Mana Cost: 70</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill">
+                                    <div class="skill-icon">
+                                        <img src="images/skills/belerick-ultimate.jpg" alt="Wrath of Nature">
+                                    </div>
+                                    <div class="skill-info">
+                                        <h5>Wrath of Nature (Ultimate)</h5>
+                                        <p>Belerick channels the power of nature, creating a field around him that deals continuous magic damage to enemies inside and reduces their movement speed. During this time, Belerick gains increased physical and magical defense.</p>
+                                        <div class="skill-stats">
+                                            <span>Cooldown: 36.0s</span>
+                                            <span>Mana Cost: 120</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-tips">
+                            <h4>Pro Tips</h4>
+                            <ul>
+                                <li>Stay close to allies who are being targeted to maximize your passive's damage reflection.</li>
+                                <li>Position yourself in the middle of the enemy team and activate your ultimate to deal continuous damage and slow enemies.</li>
+                                <li>Use Skill 1 to pull key targets into your team, and Skill 2 to zone enemies or slow those trying to escape.</li>
+                                <li>Remember that your basic attacks heal you based on your maximum HP, so build items that increase your HP to enhance this effect.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="hero-links">
+                            <a href="story.html" class="btn btn-outline">Read Story</a>
+                            <a href="skin.html" class="btn btn-outline">View Skins</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>MLBB Hero Guide</h3>
+                    <p>Your ultimate resource for Mobile Legends Bang Bang heroes, their abilities, stories, and skins.</p>
+                    <p class="copyright">© <span id="current-year"></span> MLBB Hero Guide. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="guide.html">Guide</a></li>
+                            <li><a href="story.html">Story</a></li>
+                            <li><a href="items.html">Skins</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Hero Roles</h3>
+                        <ul>
+                            <li><a href="#belerick" class="role-filter-link" data-role="Tank">Tank</a></li>
+                            <li><a href="#gatotkaca" class="role-filter-link" data-role="Fighter">Fighter</a></li>
+                            <li><a href="#martis" class="role-filter-link" data-role="Assassin">Assassin</a></li>
+                            <li><a href="#luo-yi" class="role-filter-link" data-role="Mage">Mage</a></li>
+                            <li><a href="#ixia" class="role-filter-link" data-role="Marksman">Marksman</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>This is a fan-made website and is not affiliated with or endorsed by Moonton, the developer of Mobile Legends Bang Bang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        mobileMenuToggle.addEventListener('click', function() {
+            navMobile.classList.toggle('active');
+            
+            // Change icon based on menu state
+            const icon = mobileMenuToggle.querySelector('i');
+            if (navMobile.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        
+        // Check for saved theme preference or use user's system preference
+        const prefersDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const savedTheme = localStorage.getItem('darkTheme');
+        
+        if (savedTheme === 'true' || (savedTheme === null && prefersDarkTheme)) {
+            document.body.classList.add('dark-theme');
+        }
+        
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+            
+            // Save theme preference
+            const isDarkTheme = document.body.classList.contains('dark-theme');
+            localStorage.setItem('darkTheme', isDarkTheme);
+        });
+    </script>
+</body>
+</html>
