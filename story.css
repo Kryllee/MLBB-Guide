@@ -249,6 +249,7 @@ p {
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -277,9 +278,7 @@ p {
     position: relative;
     height: 300px;
     margin-bottom: 3rem;
-    background-image: url('../images/mlbb-banner.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: var(--radius);
     overflow: hidden;
 }
@@ -305,6 +304,7 @@ p {
     justify-content: center;
     padding: 2rem;
     color: white;
+    z-index: 1;
 }
 
 .hero-content h1 {
@@ -337,7 +337,7 @@ p {
     background-color: var(--secondary);
     border: 1px solid var(--border);
     cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
 .hero-tab:hover {
@@ -355,9 +355,24 @@ p {
     height: 30px;
     border-radius: 50%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.hero-tab:hover img {
+    transform: scale(1.1);
+    border-color: var(--primary);
+}
+
+.hero-tab.active img {
+    border-color: var(--primary-foreground);
 }
 
 /* Story Content */
+.stories-section {
+    margin-bottom: 3rem;
+}
+
 .story-content {
     display: none;
     margin-bottom: 3rem;
@@ -376,6 +391,7 @@ p {
     border-radius: var(--radius);
     overflow: hidden;
     margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
 }
 
 .story-hero-image img {
@@ -404,6 +420,7 @@ p {
     border-radius: 9999px;
     background-color: rgba(59, 130, 246, 0.1);
     color: var(--primary);
+    font-weight: 500;
 }
 
 .story-text {
@@ -420,12 +437,14 @@ p {
 
 .story-text p {
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .story-links {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 /* Footer */
@@ -498,6 +517,7 @@ p {
     margin-bottom: 0;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .footer-content {
         grid-template-columns: 1fr;
@@ -505,6 +525,18 @@ p {
     
     .story-hero-image {
         height: 200px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .story-text {
+        font-size: 1rem;
     }
 }
 
@@ -517,6 +549,14 @@ p {
         flex-direction: column;
         align-items: flex-start;
     }
+    
+    .story-links {
+        flex-direction: column;
+    }
+    
+    .hero-tabs {
+        justify-content: center;
+    }
 }
 
 /* Main container for story page */
@@ -524,7 +564,7 @@ main {
     padding-top: 2rem;
 }
 
-/* Fix for story links */
-.story-links .btn {
-    text-decoration: none;
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
